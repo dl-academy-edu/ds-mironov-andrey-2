@@ -1,0 +1,157 @@
+footer {
+  background-color: #434343;
+  width: 1400px;
+  // margin-top: 155px;
+  max-height: 555px;
+  padding: 100px 110px 100px 110px;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  max-width: 1180px;
+}
+
+.item-footer {
+  flex: none;
+  margin: 0;
+  width: 380px;
+}
+
+hr {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #666666;
+  border-color: #5d5d5d;
+  border: 1px;
+}
+
+.hr-short {
+  margin-top: 23px;
+  margin-bottom: 25px;
+}
+
+.hr-long {
+  margin-top: 25px;
+  margin-bottom: 23px;
+}
+
+.box-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0 10px;
+}
+
+.item-social {
+  flex: none;
+  margin: 25px 0px;
+}
+
+.item-footer input {
+  height: 40px;
+  width: 300px;
+  background-color: #666666;
+  border: none;
+}
+
+.item-footer input::placeholder {
+  color: #ebebeb;
+  border: none;
+
+  border-color: #1e0606;
+}
+
+.box-rating {
+  display: flex;
+  gap: 0 2.88px;
+  align-items: baseline;
+}
+
+.item-raiting-star {
+  max-width: 17.12px;
+  max-height: 16.28px;
+}
+
+.item-raiting-text {
+  margin-right: 22.12px;
+}
+
+footer article {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #aaaaaa;
+}
+
+footer .url:any-link {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+footer .url:hover {
+  opacity: 0.53;
+}
+
+footer .url:active {
+  opacity: 0.24;
+}
+
+.developer-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.box-links-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-links {
+  margin: 15px auto 15px 0px;
+  max-width: 380px;
+}
+
+.box-email form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.item-email {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ebebeb;
+  padding: 9px 15px 9px 15px;
+  outline: none;
+}
+
+.item-email:focus {
+  border: 1px solid rgba(255, 253, 253, 1);
+}
+
+footer input {
+  text-indent: 10px;
+}
+
+footer section ul li {
+  margin-block-start: 15px;
+}

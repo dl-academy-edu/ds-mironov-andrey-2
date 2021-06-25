@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css" />
+    <link rel="shortcut icon" href="/static/images/svg/dlk_logo.svg" />
+    <title>DLK - Online store</title>
+  </head>
+  <body>
+    @@include('popup-form/index.html')
+    @@include('header/index.html')
+
+    <main>
+      <section class="site-article">
+        <p class="montserrat-700-40">Contact Us</p>
+      </section>
+
+      <section class="breadcrumbs crimson-400-20-italic">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ul class="dots-none">
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+              <span aria-current="page" style="opacity: 0.5; color: #1e0606"
+                >Contact Us</span
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="contact">
+        <div class="contact-form opensans-400-14">
+          <form class="contact-box not-transform" action="" method="POST">
+            <fieldset class="contact-item">
+              <div class="label-wrapper">
+                <label for="field-name" class="form-label">Name</label>
+                <input id="field-name" class="form-input" type="text" />
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-item">
+              <div class="label-wrapper">
+                <label for="field-phone" class="form-label">Phone</label>
+                <input id="field-phone" type="tel" />
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-item">
+              <div class="label-wrapper">
+                <label for="field-email" class="form-label">Email</label>
+                <input id="field-email" type="email" />
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-item">
+              <div class="label-wrapper">
+                <label class="form-label">Message</label>
+                <textarea></textarea>
+              </div>
+            </fieldset>
+
+            <div class="contact-item">
+              <div class="consent">
+                <input class="consent-checkbox" type="checkbox" />
+                <label class="btn btn-warning"
+                  >By clicking on the button, you consent to the processing of
+                  your personal data</label
+                >
+              </div>
+            </div>
+
+            <div class="label-wrapper">
+              <button type="submit" class="button-black">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="text-box">
+          <p class="opensans-700-16-normal">
+            Our support team are on-hand to assist with any issues you are
+            experiencing.
+          </p>
+
+          <p class="opensans-700-16-normal">
+            Please use the form to contact us with your needs. Send us a message
+            and we'll respond as soon as possible.
+          </p>
+
+          <p class="Montserrat-600-26-gold">
+            An expert is waiting to help you!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    @@include('footer/index.html')
+  </body>
+</html>

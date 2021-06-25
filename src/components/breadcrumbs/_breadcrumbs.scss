@@ -1,0 +1,34 @@
+// <!-- @@include('breadcrumbs/index.html', {
+//   "text":"Blog"
+// }) -->
+
+
+
+.breadcrumbs {
+  margin: 15px auto 50px 110px;
+}
+
+.breadcrumb ul {
+  display: flex;
+  padding-left: 0px;
+  gap: 20px;
+}
+
+.breadcrumb li::before {
+  content: url(../../static/images/svg/Vector-breadcrumb.svg);
+  width: 8px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.breadcrumb li:first-child::before {
+  content: "";
+  margin-right: 0px;
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited,
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #1e0606;
+}
