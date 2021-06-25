@@ -21,9 +21,3 @@ window.addEventListener('keydown', function(event) {
         }
     }
 })
-
-
-var buttonOpen = document.querySelector('.banner__btn_js');
-var buttonClose = popup.querySelector('.popup-close-js');
-var input = popup.querySelector('input');
-
