@@ -1,7 +1,6 @@
 footer {
   background-color: #434343;
   width: 1400px;
-  // margin-top: 155px;
   max-height: 555px;
   padding: 100px 110px 100px 110px;
 }
@@ -142,11 +141,13 @@ footer .url:active {
   color: #ebebeb;
   padding: 9px 15px 9px 15px;
   outline: none;
+
+  &:focus {
+    border: 1px solid rgba(255, 253, 253, 1);
+  }
 }
 
-.item-email:focus {
-  border: 1px solid rgba(255, 253, 253, 1);
-}
+
 
 footer input {
   text-indent: 10px;
