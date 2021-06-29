@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'),
-       url('../fonts/open-sans-v20-latin-regular.woff') format('woff');
+       url('../fonts/open-sans/open-sans-v20-latin-regular.woff2') format('woff2'),
+       url('../fonts/open-sans/open-sans-v20-latin-regular.woff') format('woff');
 }
 /* open-sans-700 - latin */
 @font-face {
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('../fonts/open-sans-v20-latin-700.woff2') format('woff2'),
-       url('../fonts/open-sans-v20-latin-700.woff') format('woff');
+       url('../fonts/open-sans/open-sans-v20-latin-700.woff2') format('woff2'),
+       url('../fonts/open-sans/open-sans-v20-latin-700.woff') format('woff');
 }
 /* montserrat-300 - latin */
 @font-face {
@@ -22,8 +22,8 @@
   font-style: normal;
   font-weight: 300;
   src: local(''),
-       url('../fonts/montserrat-v15-latin-300.woff2') format('woff2'),
-       url('../fonts/montserrat-v15-latin-300.woff') format('woff');
+       url('../fonts/montserrat/montserrat-v15-latin-300.woff2') format('woff2'),
+       url('../fonts/montserrat/montserrat-v15-latin-300.woff') format('woff');
 }
 /* montserrat-regular - latin */
 @font-face {
@@ -31,8 +31,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'),
-       url('../fonts/montserrat-v15-latin-regular.woff') format('woff');
+       url('../fonts/montserrat/montserrat-v15-latin-regular.woff2') format('woff2'),
+       url('../fonts/montserrat/montserrat-v15-latin-regular.woff') format('woff');
 }
 /* montserrat-600 - latin */
 @font-face {
@@ -40,8 +40,8 @@
   font-style: normal;
   font-weight: 600;
   src: local(''),
-       url('../fonts/montserrat-v15-latin-600.woff2') format('woff2'),
-       url('../fonts/montserrat-v15-latin-600.woff') format('woff');
+       url('../fonts/montserrat/montserrat-v15-latin-600.woff2') format('woff2'),
+       url('../fonts/montserrat/montserrat-v15-latin-600.woff') format('woff');
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -49,8 +49,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'),
-       url('../fonts/montserrat-v15-latin-700.woff') format('woff');
+       url('../fonts/montserrat/montserrat-v15-latin-700.woff2') format('woff2'),
+       url('../fonts/montserrat/montserrat-v15-latin-700.woff') format('woff');
 }
 /* crimson-text-regular - latin */
 @font-face {
@@ -58,8 +58,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/crimson-text-v11-latin-regular.woff2') format('woff2'),
-       url('../fonts/crimson-text-v11-latin-regular.woff') format('woff');
+       url('../fonts/crimson-text/crimson-text-v11-latin-regular.woff2') format('woff2'),
+       url('../fonts/crimson-text/crimson-text-v11-latin-regular.woff') format('woff');
 }
 /* crimson-text-italic - latin */
 @font-face {
@@ -67,8 +67,8 @@
   font-style: italic;
   font-weight: 400;
   src: local(''),
-       url('../fonts/crimson-text-v11-latin-italic.woff2') format('woff2'),
-       url('../fonts/crimson-text-v11-latin-italic.woff') format('woff');
+       url('../fonts/crimson-text/crimson-text-v11-latin-italic.woff2') format('woff2'),
+       url('../fonts/crimson-text/crimson-text-v11-latin-italic.woff') format('woff');
 }
 /* crimson-text-700italic - latin */
 @font-face {
@@ -76,8 +76,8 @@
   font-style: italic;
   font-weight: 700;
   src: local(''),
-       url('../fonts/crimson-text-v11-latin-700italic.woff2') format('woff2'),
-       url('../fonts/crimson-text-v11-latin-700italic.woff') format('woff');
+       url('../fonts/crimson-text/crimson-text-v11-latin-700italic.woff2') format('woff2'),
+       url('../fonts/crimson-text/crimson-text-v11-latin-700italic.woff') format('woff');
 }
 /* roboto-regular - latin */
 @font-face {
@@ -85,6 +85,6 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'),
-       url('../fonts/roboto-v27-latin-regular.woff') format('woff');
+       url('../fonts/roboto/roboto-v27-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto/roboto-v27-latin-regular.woff') format('woff');
 }

@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/fonts.css" />
-    <link rel="shortcut icon" href="/static/images/svg/dlk_logo.svg">
-    <title>DLK - Online store</title>
-  </head>
+
+  @@include('head/head.html', {
+    "title": "DLK - Online store"
+    })
+
   <body>
     
     @@include('header/index.html')
@@ -80,7 +76,7 @@
             <li><p>Guarantee</p></li>
             <li><p>Credit</p></li>
           </ul>
-          <div class="opensans-700-16-normal text-service"> 
+          <div class="text-service opensans-700-16-normal"> 
             <p>
               Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.
             </p>
@@ -170,19 +166,12 @@
           
         </div>
       </section>
+
     </main>
 
     @@include('footer/index.html')
-
-
     
     @@include('popup/index.html')
     
-
-
-    
-
-
-
   </body>
 </html>
