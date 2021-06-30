@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  
-  @@include('head/head.html', {
-    "title": "DLK - Blog"
-    })
-    
+  @@include('head/head.html', { "title":"DLK - Blog" })
+
   <body>
-    
     @@include('header/index.html')
 
     <main>
-      <section class="breadcrumbs">
-        <p class="montserrat-700-40">Blog</p>
-        <nav aria-label="breadcrumb" class="breadcrumb crimson-400-20-italic">
-          <ul class="dots-none">
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <span aria-current="page" style="opacity: 0.5; color: #1e0606">Blog</span>
-            </li>
-          </ul>
-        </nav>
-      </section>
+      @@include('breadcrumbs/index.html', { "page-name":"BLOG", "text":"Blog" })
 
       <section class="blog-box">
         <div class="blog-item">
@@ -136,7 +122,6 @@
       </section>
     </main>
 
-    @@include('footer/index.html')
-    @@include('popup/index.html') 
+    @@include('footer/index.html') @@include('popup/index.html')
   </body>
 </html>
