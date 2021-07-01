@@ -201,17 +201,7 @@ p {
   text-transform: uppercase;
 }
 
-.montserrat-700-38-black {
-  font-family: Montserrat;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 46px;
-  letter-spacing: 0em;
 
-  color: #1e0606;
-  text-transform: uppercase;
-}
 
 .montserrat-700-26-white {
   font-family: Montserrat;
@@ -232,8 +222,11 @@ p {
   font-weight: 700;
   line-height: 46px;
   letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 30px;
+
+  color: #1e0606;
+  text-transform: uppercase;
+  // margin-bottom: 30px;
+  // text-align: left;
 }
 
 .montserrat-700-40 {
