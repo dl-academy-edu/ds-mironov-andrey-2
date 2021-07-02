@@ -7,6 +7,78 @@
       @@include('breadcrumbs/index.html', { "page-name":"Toys for kids",
       "text":"Toys" })
 
+      <section class="selector">
+        <div class="selector-form">
+          <div class="cost-selector">
+            <article>Cost</article>
+            <Label>0</Label>
+            <input type="range" min="0" max="500" value="200" step="1">
+            <Label>500</Label>
+          </div>
+
+          <div class="color-selector">
+            
+            <article>Color</article>
+           <div class="color-massive"> 
+            <div>
+              <input type="checkbox" id="coding" name="interest" value="coding">
+              <label for="coding">Black</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="coding" name="interest" value="coding">
+              <label for="coding">Blue</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="coding" name="interest" value="coding">
+              <label for="coding">Green</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="coding" name="interest" value="coding">
+              <label for="coding">White</label>
+            </div>
+           </div> 
+          </div>
+
+          <div class="delivery-selector">
+            <article>Delivery</article>
+            <div class="delivery-massive">
+              <div>
+              <input type="radio" id="contactChoice1"
+              name="delivery" value="free" checked>
+              <label for="contactChoice1">Free shipping</label>
+              </div>
+              <div>
+              <input type="radio" id="contactChoice2"
+               name="delivery" value="fast">
+              <label for="contactChoice2">Fast shipping</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="amount-selector">
+            <article>Amount</article>
+          
+          
+          </div>
+
+        <div>
+          @@include('button/index.html', { "text":"APPLY" })
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        </div>
+      </section>
       
     </main>
     @@include('footer/index.html') @@include('popup/index.html')
