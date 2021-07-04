@@ -222,11 +222,9 @@ p {
   font-weight: 700;
   line-height: 46px;
   letter-spacing: 0em;
-
-  color: #1e0606;
+  text-align: left;
   text-transform: uppercase;
-  // margin-bottom: 30px;
-  // text-align: left;
+  color: #1e0606;
 }
 
 .montserrat-700-40 {
@@ -257,3 +255,4 @@ p {
 @import "./popup/popup";
 @import "./button/button";
 @import "./breadcrumbs/breadcrumbs";
+@import "./selector/selector";
