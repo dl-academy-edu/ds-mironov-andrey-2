@@ -38,6 +38,9 @@ p {
 .capitalize {
   text-transform: capitalize;
 }
+.bold {
+  font-style: bold;
+}
 
 /* color */
 
@@ -256,3 +259,5 @@ p {
 @import "./button/button";
 @import "./breadcrumbs/breadcrumbs";
 @import "./selector/selector";
+@import "./pagination/pagination";
+

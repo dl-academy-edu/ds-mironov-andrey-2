@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 113px 60px 113px;
+}
+
+.page-number {
+  display: flex;
+  gap: 64px;
+  cursor: pointer;
+  & p:hover {
+    color: #c29974;
+  }
+}
+
+.vector-left,
+.vector-right {
+  width: 13px;
+  opacity: 0.12;
+}
