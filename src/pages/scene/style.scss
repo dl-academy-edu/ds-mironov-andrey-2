@@ -1,0 +1,267 @@
+// z-index справка
+// Фон 1
+// Корпуса машин 45
+// Колеса машин 50
+// Фонари 2 плана 60
+
+
+
+
+.animation {
+    display: block;
+    position: relative;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// svg and possitions
+
+.background {
+    content: url('../../static/images/animation/background.svg');
+    width: -webkit-fill-available;
+}
+
+
+// позиция относительно фона
+
+.car {
+    
+    &__1 {
+        position: absolute;
+        top: 45%;
+        left: 8%;
+    }
+
+    &__2 {
+        position: absolute;
+        top: 47%;
+        left: 35%;
+    }
+
+    &__3 {
+        position: absolute;
+        top: 53%;
+        left: 57%;
+    }
+
+    &__4 {
+        position: absolute;
+        top: 41%;
+        left: 79%;
+    }
+
+}
+
+//движение задних авто
+.drive-left {
+    animation: 10s linear 0s infinite running slidein;
+}
+
+@keyframes drive-left {
+    from {
+        
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(100%);
+    }
+}
+
+// позиция колёс
+
+.car1 {
+    display: table;
+    position: relative;
+    width: auto;
+    height: auto;
+   
+    
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+   
+    content: url('../../static/images/animation/car1/Car1.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    left: 13.5%;
+    bottom: -1%;
+    content: url('../../static/images/animation/car1/wheel1.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    right: 9.25%;
+    bottom: -1%;
+    content: url('../../static/images/animation/car1/wheel1.svg');
+    z-index: 50;
+    
+    }
+      
+}
+
+.car2 {
+    display: table;
+    position: relative;
+    width: auto;
+    height: auto;
+   
+    
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+   
+    content: url('../../static/images/animation/car2/Car2.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    left: 8.5%;
+    bottom: 0;
+    content: url('../../static/images/animation/car2/wheel2.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    right: 8.5%;
+    bottom: 0;
+    content: url('../../static/images/animation/car2/wheel2.svg');
+    z-index: 50;
+    
+    }
+      
+}
+
+.car3 {
+    display: table;
+    position: relative;
+    width: auto;
+    height: auto;
+   
+    
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+   
+    content: url('../../static/images/animation/car3/Car3.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    left: 18.75%;
+    bottom: 8.25%;
+    content: url('../../static/images/animation/car3/wheel3.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    right: 15.25%;
+    bottom: 8.25%;
+    content: url('../../static/images/animation/car3/wheel3.svg');
+    z-index: 50;
+    
+    }
+      
+}
+
+.car4 {
+    display: table;
+    position: relative;
+    width: auto;
+    height: auto;
+   
+    
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+   
+    content: url('../../static/images/animation/car4/Car4.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    left: 13.25%;
+    bottom: 0;
+    content: url('../../static/images/animation/car4/wheel4.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    
+    position: absolute;
+    right: 9.25%;
+    bottom: 0;
+    content: url('../../static/images/animation/car4/wheel4.svg');
+    z-index: 50;
+    
+    }
+      
+}
+
+// кручение колёс
+
+.rot {
+    animation: 2s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
