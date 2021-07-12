@@ -1,96 +1,78 @@
-// z-index справка
-// Фон 1
-// Корпуса машин 45
-// Колеса машин 50
-// Фонари 2 плана 60
-
-
-
-
 .animation {
     display: block;
     position: relative;
-
-
+    width: -webkit-fill-available;
+    height: auto;
+    margin-block-end: 40px;
+    overflow: hidden;
 }
 
+.sky {
+    width: 100%;
+    height: 100px;
+}
 
+.sun {
+    content: url('../../static/images/animation/sky/sun.svg');
+    position: absolute;
+    right: 25%;
+}
 
+.cloud {
+    &-0 {
+        content: url('../../static/images/animation/sky/cloud-0.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
 
+    &-1 {
+        content: url('../../static/images/animation/sky/cloud-1.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 20%;
+    }
 
+    &-3 {
+        content: url('../../static/images/animation/sky/cloud-3.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 45%;
+    }
 
+    &-4 {
+        content: url('../../static/images/animation/sky/cloud-4.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 65%;
+    }
 
-
-
-
-// svg and possitions
+    &-5 {
+        content: url('../../static/images/animation/sky/cloud-5.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 85%;
+    }
+}
 
 .background {
     content: url('../../static/images/animation/background.svg');
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
-
-// позиция относительно фона
-
-.car {
-    
-    &__1 {
-        position: absolute;
-        top: 45%;
-        left: 8%;
-    }
-
-    &__2 {
-        position: absolute;
-        top: 47%;
-        left: 35%;
-    }
-
-    &__3 {
-        position: absolute;
-        top: 53%;
-        left: 57%;
-    }
-
-    &__4 {
-        position: absolute;
-        top: 41%;
-        left: 79%;
-    }
-
-}
-
-//движение задних авто
-.drive-left {
-    animation: 10s linear 0s infinite running slidein;
-}
-
-@keyframes drive-left {
-    from {
-        
-      transform: translateX(0%);
-    }
-  
-    to {
-      transform: translateX(100%);
-    }
-}
-
-// позиция колёс
-
+//Машинки
 .car1 {
-    display: table;
-    position: relative;
+    display: table-cell;
+    position: absolute;
     width: auto;
     height: auto;
+    bottom: 31%;
+    left: 5%;
    
-    
     &__body {
     display: block;
     width: auto;
     height: auto;
-   
     content: url('../../static/images/animation/car1/Car1.svg');
     z-index: 45;
     }
@@ -99,7 +81,6 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     left: 13.5%;
     bottom: -1%;
@@ -111,29 +92,26 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     right: 9.25%;
     bottom: -1%;
     content: url('../../static/images/animation/car1/wheel1.svg');
     z-index: 50;
-    
     }
-      
 }
 
 .car2 {
-    display: table;
-    position: relative;
+    display: table-cell;
+    position: absolute;
     width: auto;
     height: auto;
+    bottom: 31%;
+    left: 25%;
    
-    
     &__body {
     display: block;
     width: auto;
     height: auto;
-   
     content: url('../../static/images/animation/car2/Car2.svg');
     z-index: 45;
     }
@@ -142,7 +120,6 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     left: 8.5%;
     bottom: 0;
@@ -154,29 +131,26 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     right: 8.5%;
     bottom: 0;
     content: url('../../static/images/animation/car2/wheel2.svg');
     z-index: 50;
-    
     }
-      
 }
 
 .car3 {
-    display: table;
-    position: relative;
+    display: table-cell;
+    position: absolute;
     width: auto;
     height: auto;
+    bottom: 31%;
+    left: 55%;
    
-    
     &__body {
     display: block;
     width: auto;
     height: auto;
-   
     content: url('../../static/images/animation/car3/Car3.svg');
     z-index: 45;
     }
@@ -185,7 +159,6 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     left: 18.75%;
     bottom: 8.25%;
@@ -197,29 +170,26 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     right: 15.25%;
     bottom: 8.25%;
     content: url('../../static/images/animation/car3/wheel3.svg');
     z-index: 50;
-    
-    }
-      
+    }  
 }
 
 .car4 {
-    display: table;
-    position: relative;
+    display: table-cell;
+    position: absolute;
     width: auto;
     height: auto;
+    bottom: 31%;
+    left: 75%;
    
-    
     &__body {
     display: block;
     width: auto;
     height: auto;
-   
     content: url('../../static/images/animation/car4/Car4.svg');
     z-index: 45;
     }
@@ -228,7 +198,6 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     left: 13.25%;
     bottom: 0;
@@ -240,28 +209,78 @@
     display: block;
     width: auto;
     height: auto;
-    
     position: absolute;
     right: 9.25%;
     bottom: 0;
     content: url('../../static/images/animation/car4/wheel4.svg');
     z-index: 50;
-    
     }
-      
 }
 
 // кручение колёс
-
-.rot {
-    animation: 2s linear 0s normal none infinite running rot;
+.wheel-clockwise {
+    animation: wheel-clockwise 2s linear 0s normal none infinite running;
 }
 
-@keyframes rot {
+@keyframes wheel-clockwise {
     0% {
       transform: rotate(0deg);
     }
+
     100% {
       transform: rotate(360deg);
     }
 }
+
+
+.sky-mover {
+animation: sky-mover 20s ease-in-out forwards infinite;
+
+}
+
+@keyframes sky-mover {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
+
+}
+
+.speed1 {
+    animation: speed1 30s ease-in-out forwards infinite;
+}
+
+@keyframes speed1 {
+    0% { transform: translateX(-350px); }
+    100% { transform: translateX(1600px); }
+}
+
+.speed2 {
+    animation: speed2 60s ease-in-out forwards infinite;
+}
+
+@keyframes speed2 {
+    0% { transform: translateX(-1000px); }
+    100% { transform: translateX(1600px); }
+}
+
+.speed3 {
+    animation: speed3 60s ease-in-out forwards infinite;
+}
+
+@keyframes speed3 {
+    0% { transform: translateX(-1200px); }
+    100% { transform: translateX(1600px); }
+}
+
+.speed4 {
+    animation: speed4 60s ease-in-out forwards infinite;
+}
+
+@keyframes speed4 {
+    0% { transform: translateX(-1600px); }
+    100% { transform: translateX(1600px); }
+}
+
+
+
+
+// user-select: none;
