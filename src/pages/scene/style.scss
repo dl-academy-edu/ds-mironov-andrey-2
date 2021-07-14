@@ -7,10 +7,10 @@
     overflow: hidden;
 }
 
+// Солнце и движение облаков
 .sky {
     width: 100%;
-    height: 100px;
-}
+    height: 100px}
 
 .sun {
     content: url('../../static/images/animation/sky/sun.svg');
@@ -55,12 +55,51 @@
     }
 }
 
+.cloud-mover {
+    animation: cloud-mover 20s ease-in-out forwards infinite;
+}
+    
+@keyframes cloud-mover {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
+}
+
+// Статичный фон (Город)
 .background {
     content: url('../../static/images/animation/background.svg');
     width: 100%;
 }
 
-//Машинки
+// Фонари
+.lantern {
+ 
+    &__left {
+        content: url('../../static/images/animation/lantern-back.svg');
+        position: absolute;
+        top: 14%;
+        left: 35%;
+        z-index: 60;
+        fill:red;
+    }
+    
+    &__right {
+        content: url('../../static/images/animation/lantern-back.svg');
+        position: absolute;
+        top: 14%;
+        left: 80.5%;
+        z-index: 60;
+    }
+
+    &__front {
+        content: url('../../static/images/animation/lantern-front.svg');
+        position: absolute;
+        top: 11%;
+        left: 71%;
+        z-index: 100;
+    }
+}
+
+// Машины 2 плана
 .car1 {
     display: table-cell;
     position: absolute;
@@ -68,7 +107,7 @@
     height: auto;
     bottom: 31%;
     left: 5%;
-   
+       
     &__body {
     display: block;
     width: auto;
@@ -217,7 +256,7 @@
     }
 }
 
-// кручение колёс
+// Кручение колёс машин 2 плана
 .wheel-clockwise {
     animation: wheel-clockwise 2s linear 0s normal none infinite running;
 }
@@ -232,18 +271,7 @@
     }
 }
 
-
-.sky-mover {
-animation: sky-mover 20s ease-in-out forwards infinite;
-
-}
-
-@keyframes sky-mover {
-    0% { transform: translateX(-100px); }
-    100% { transform: translateX(100px); }
-
-}
-
+// Движение машин 2 плана
 .speed1 {
     animation: speed1 30s ease-in-out forwards infinite;
 }
@@ -280,7 +308,104 @@ animation: sky-mover 20s ease-in-out forwards infinite;
     100% { transform: translateX(1600px); }
 }
 
+// Такси
+.taxi {
+    display: table-cell;
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 13%;
+    left: 25%;
+    z-index: 80;
+    
 
+    &__body {
+        display: block;
+        content: url('../../static/images/animation/taxi/taxi-body.svg');
+        width: auto;
+        height: auto;
+               
+    }
+
+    &__glass {
+        display: block;
+        content: url('../../static/images/animation/taxi/glass.svg');
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 35.75%;
+        bottom: 59.5%;
+        z-index: -1;
+    }
+    &__l-wheel {
+        display: block;
+        content: url('../../static/images/animation/taxi/taxi-wheel.svg');
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 15%;
+        bottom: 7%;
+     
+    }
+
+    &__r-wheel {
+        display: block;
+        content: url('../../static/images/animation/taxi/taxi-wheel.svg');
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 18.75%;
+        bottom: 7%;
+       
+    }
+    
+}
+
+// Водитель
+.taxi__driver {
+    display: block;
+    content: url('../../static/images/animation/taxi/driver.png');
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 37.5%;
+    bottom: 52%;
+    z-index: -1;
+}
+
+// Кручение Такси
+.wheel-counterclock {
+    animation: wheel-counterclock 2s linear 0s normal none infinite running;
+}
+
+@keyframes wheel-counterclock {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
+    }
+}
+
+// Анимация окна
+.glass-open {
+    animation: glass-open 10s ease-in-out forwards infinite;
+}
+
+@keyframes glass-open {
+    0% {
+      transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
 
 
 // user-select: none;
