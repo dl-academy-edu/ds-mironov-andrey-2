@@ -8,69 +8,68 @@
       "text":"Catalog" })
 
       <section class="category">
-        <div class="box-category">
-          <div class="item-category">
-            <img src="../../static/images/main/sweater.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >APPAREL KIDS</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/sock.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >HOLIDAY SHOP</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/deer.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >TOYS</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/monkey.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >ACCESSORIES</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/flamingo.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >SALE</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/clothes.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >APPAREL ADULTS</a
-            >
-          </div>
-        </div>
+      
+        @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/sweater.png",
+          "alt":"none",
+          "name":"APPAREL KIDS",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/sock.png",
+          "alt":"none",
+          "name":"HOLIDAY SHOP",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/deer.png",
+          "alt":"none",
+          "name":"TOYS",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/monkey.png",
+          "alt":"none",
+          "name":"ACCESSORIES",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/flamingo.png",
+          "alt":"none",
+          "name":"SALE",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/clothes.png",
+          "alt":"none",
+          "name":"APPAREL ADULTS",
+         })
+
       </section>
 
-      <section class="description-box">
-        <article>Product Description</article>
-        <div class="description-item">
+      <section class="description">
+        <article class="description__article">Product Description</article>
+        <div class="description__text">
           <p>
             Interactive doll Zapf Creation Baby Born Sister can drink from a
             bottle and almost really cry. You can even bathe her, just like a
             little sister.
           </p>
         </div>
-        <div class="description-item">
+        <div class="description__text">
           <p>
             A toy with a height of 43 cm bends its knees, the head rotates, it
             can stand upright. Such a doll will be an excellent choice for a
             gift for a girl from 4 years old.
           </p>
         </div>
-        <div class="description-item">
+        <div class="description__text">
           <p>
             The set includes a miniature set of fashionable clothes, a
             hairbrush, a bottle for water, a pair of hairpins and elastic bands

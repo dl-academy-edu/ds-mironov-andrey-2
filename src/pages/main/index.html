@@ -4,45 +4,48 @@
 
   <body>
     @@include('header/index.html')
-
     <main>
-      <section class="banner box-banner">
-        <div class="box-banner-counter item-banner">
-          <p class="item-banner-counter banner-number">O1</p>
-          <img
-            class="item-banner-counter"
-            src="../../static/images/svg/Rectangle.svg"
-            alt=""
-          />
-          <img
-            class="item-banner-counter"
-            src="../../static/images/svg/Rectangle.svg"
-            alt=""
-          />
-          <img
-            class="item-banner-counter"
-            src="../../static/images/svg/Rectangle.svg"
-            alt=""
-          />
-          <img
-            class="item-banner-counter"
-            src="../../static/images/svg/Rectangle.svg"
-            alt=""
-          />
+      <section class="banner">
+        <div class="banner__counter">
+          <p class="banner__counter__number">O1</p>
+
+          <object
+            type="image/svg+xml"
+            data="../../static/images/svg/Rectangle.svg"
+            class="banner__counter__line"
+          ></object>
+
+          <object
+            type="image/svg+xml"
+            data="../../static/images/svg/Rectangle.svg"
+            class="banner__counter__line"
+          ></object>
+
+          <object
+            type="image/svg+xml"
+            data="../../static/images/svg/Rectangle.svg"
+            class="banner__counter__line"
+          ></object>
+
+          <object
+            type="image/svg+xml"
+            data="../../static/images/svg/Rectangle.svg"
+            class="banner__counter__line"
+          ></object>
+          
         </div>
 
-        <div class="box-collection-name item-banner">
-          <article>THE OOH NOO COLLECTION</article>
-          <p class="crimson-400-20-italic">Designed in Slovenia</p>
-
+        <div class="banner__name">
+          <p class="banner__name__article">THE OOH NOO COLLECTION</p>
+          <p class="banner__name__text">Designed in Slovenia</p>
           @@include('button/index.html', { "text":"EXPLORE NOW" })
         </div>
 
-        <div class="box-image item-banner">
+        <div class="banner__image">
           <img src="../../static/images/main/monster.png" alt="monster" />
         </div>
 
-        <div class="box-banner-button item-banner opensans-700-12">
+        <div class="banner__span">
           <p>
             Free (continental) USA shipping on all orders of $100 USD or more!
           </p>
@@ -50,46 +53,22 @@
       </section>
 
       <section class="category">
-        <p class="category-article montserrat-700-38-black">CATEGORY PRODUCTS</p>
-        <div class="box-category">
-          <div class="item-category">
-            <img src="../../static/images/main/sweater.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >APPAREL KIDS</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/sock.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >HOLIDAY SHOP</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/deer.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="/pages/toys"
-              >TOYS</a
-            >
-          </div>
-          <div class="item-category">
-            <img src="../../static/images/main/monkey.png" alt="" /><a
-              class="text-category montserrat-700-26-white"
-              href="#"
-              >ACCESSORIES</a
-            >
-          </div>
-        </div>
+        <p class="category__article">CATEGORY PRODUCTS</p>
 
-        <div class="box-selector">
-          <a href="#" class="item-selector-button">
-            <img src="../../static/images/svg/vector-left.svg" alt="" />
-          </a>
-          <a href="#" class="item-selector-button">
-            <img src="../../static/images/svg/vector-right.svg" alt="" />
-          </a>
-          <div class="item-selector-note opensans-700-16-normal">
+        @@include('items/category.html', { "href":"#",
+        "img":"../../static/images/category/sweater.png", "alt":"none",
+        "name":"APPAREL KIDS", }) @@include('items/category.html', { "href":"#",
+        "img":"../../static/images/category/sock.png", "alt":"none",
+        "name":"HOLIDAY SHOP", }) @@include('items/category.html', { "href":"#",
+        "img":"../../static/images/category/deer.png", "alt":"none",
+        "name":"TOYS", }) @@include('items/category.html', { "href":"#",
+        "img":"../../static/images/category/monkey.png", "alt":"none",
+        "name":"ACCESSORIES", })
+
+        <div class="category__selector">
+          <div class="category__selector-left"></div>
+          <div class="category__selector-right"></div>
+          <div class="category__selector__note">
             <p>
               Modern finds for the modern home. Curated goods by unique
               designers around the world from fashion to furniture for kids and
@@ -99,81 +78,63 @@
         </div>
       </section>
 
-      <section class="service box-service">
-        <div class="item-service-left">
-          <img src="../../static/images/main/person.jpg" alt="person" />
+      <section class="service">
+        <div class="service__left">
+          <img
+            class="service__left__img"
+            src="../../static/images/main/person.jpg"
+            alt="person"
+          />
         </div>
-        <div class="item-service-right">
-          <article class="montserrat-700-38-black">DELIVERY</article>
-          <ul class="dots-none crimson-400-26-italic">
-            <li><p>Delivery</p></li>
-            <li><p>Guarantee</p></li>
-            <li><p>Credit</p></li>
-          </ul>
-          <div class="text-service opensans-700-16-normal">
-            <p>
+
+        <div class="service__right">
+          <article class="service__right__article">DELIVERY</article>
+
+          <div class="service__right__dynamic">
+            <div class="service__right__dynamic-1"><p>Delivery</p></div>
+            <div class="service__right__dynamic-2"><p>Guarantee</p></div>
+            <div class="service__right__dynamic-3"><p>Credit</p></div>
+          </div>
+
+          <div class="service__right__text">
+            <p class="service__right__text-1">
               Some days i feel like i've been working on dlk my entire life and
               there are other days that i am completely shocked that four years
               have flown by. It's simply magical.
             </p>
-            <br style="gap: 15px" />
-            <p>
+            <p class="service__right__text-2">
               What started as an outlet to deal with the traumatic loss of my
               husband, dlk has now become a truly happy place for me and i have
               you and all of the beautiful designers that we work with to thank!
             </p>
           </div>
 
-          @@include('button/index.html', { "text":"Learn more" })
+          @@include('button/index.html', { "text":"Learn more",
+          "class":"service__right__button" })
         </div>
       </section>
 
       <section class="partners">
-        <ul class="dots-none box-partners">
-          <li class="item-partners">
-            <a href="https://mail.ru/" class="button-partners">
-              <img
-                src="../../static/images/partners/mail_ru.png"
-                alt="mail_ru"
-                width="193px"
-                height="60px"
-            /></a>
-          </li>
-          <li class="item-partners">
-            <a href="https://www.apple.com/" class="button-partners">
-              <img
-                src="../../static/images/partners/apple.png"
-                alt="apple"
-                width="179px"
-                height="61px"
-            /></a>
-          </li>
-          <li class="item-partners">
-            <a href="https://eltex-co.ru/" class="button-partners">
-              <img
-                src="../../static/images/partners/eltex.png"
-                alt="eltex"
-                width="216px"
-                height="46px"
-            /></a>
-          </li>
-          <li class="item-partners">
-            <a href="https://www.owox.ru/" class="button-partners">
-              <img
-                src="../../static/images/partners/owox.png"
-                alt="owox"
-                width="211px"
-                height="40px"
-            /></a>
-          </li>
-        </ul>
+        @@include('items/partners.html', { "class":"partners__item-1",
+        "href":"https://mail.ru/",
+        "img":"../../static/images/partners/mail_ru.png", "alt":"mail.ru", })
+        @@include('items/partners.html', { "class":"partners__item-2",
+        "href":"https://www.apple.com/",
+        "img":"../../static/images/partners/apple.png", "alt":"apple", })
+        @@include('items/partners.html', { "class":"partners__item-3",
+        "href":"https://eltex-co.ru/",
+        "img":"../../static/images/partners/eltex.png", "alt":"eltex-co.ru", })
+        @@include('items/partners.html', { "class":"partners__item-4",
+        "href":"https://www.owox.ru/",
+        "img":"../../static/images/partners/owox.png", "alt":"owox.ru", })
       </section>
 
-      <section class="box-contacts">
-        <div class="item-contacts">
-          <p class="montserrat-700-38-black">Design Life Kids</p>
-          <article class="crimson-400-26-italic capitalize">about us</article>
-          <p class="opensans-400-16 text-contacts">
+      <section class="contacts">
+        <div class="contacts__item">
+          <p class="contacts__item__article">Design Life Kids</p>
+
+          <p class="contacts__item__about">About us</p>
+          <p class="contacts__item__text">
             Some days i feel like i've been working on dlk my entire life and
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
@@ -181,23 +142,25 @@
           @@include('button/index.html', { "text":"BUY NOW" })
         </div>
 
-        <div class="item-contacts">
-          <p class="montserrat-700-38-black">CONTACTS</p>
-          <p class="opensans-400-16 text-contacts">
+        <div class="contacts__item">
+          <p class="contacts__item__article">CONTACTS</p>
+
+          <p class="contacts__item__text">
             Some days i feel like i've been working on dlk my entire life and
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
           </p>
 
           <iframe
-            class="iframe-map"
+            class="contacts__item__iframe"
             title="Where are we"
             name="map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9490.1485980241!2d49.2903386!3d53.5124631!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1619899951009!5m2!1sru!2sru"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
-          ></iframe>
+          >
+          </iframe>
         </div>
       </section>
     </main>
