@@ -1,39 +1,39 @@
-<script src="index.js"></script>
 
 <div class="popup">
   <form class="popup__form" action="" method="POST">
     <fieldset class="popup__form__item">
-      <label for="field-name" class="form-label">Name</label>
+      <label for="field-name">Name</label>
       <input id="field-name" class="form-input" type="text" />
     </fieldset>
 
     <fieldset class="popup__form__item">
-      <label for="field-phone" class="form-label">Phone</label>
+      <label for="field-phone">Phone</label>
       <input id="field-phone" type="tel" />
     </fieldset>
 
     <fieldset class="popup__form__item">
-      <label for="field-email" class="form-label">Email</label>
+      <label for="field-email">Email</label>
       <input id="field-email" type="email" />
     </fieldset>
 
     <fieldset class="popup__form__item">
-      <label class="form-label">Message</label>
+      <label>Message</label>
       <textarea></textarea>
     </fieldset>
 
     <fieldset class="popup__form__item">
-      <input class="consent-checkbox" type="checkbox" />
-      <label class=""
-        >By clicking on the button, you consent to the processing of your
-        personal data</label
-      >
+      <input class="consent-checkbox" type="checkbox" value="accept"/>
+      <label>
+        By clicking on the button, you consent to the processing of your
+        personal data
+      </label>
     </fieldset>
 
     <div class="popup__form__item">
-      <button type="submit" class="popup__form__submit">Submit</button>
+      <button type="submit" value="accept">Submit</button>
     </div>
 
-    <div class="popup__form__close"></div>
+    <div class="popup__form__close popup-close-js"></div>
   </form>
 </div>
+<script src="script.js"></script>
