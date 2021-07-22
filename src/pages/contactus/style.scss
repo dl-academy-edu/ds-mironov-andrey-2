@@ -1,17 +1,10 @@
-main section {
-  margin-left: 110px;
-  margin-right: 110px;
-}
 
 .not-transform {
   text-transform: none;
 }
 
-.header {
-  margin-bottom: 60px;
-}
-
 .contact {
+  margin: 56px 110px 60px 110px;
   display: flex;
   flex-wrap: nowrap;
   gap: 120px;

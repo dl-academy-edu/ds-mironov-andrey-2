@@ -6,23 +6,9 @@
     @@include('header/index.html')
 
     <main>
-      <section class="site-article">
-        <p class="montserrat-700-40">Contact Us</p>
-      </section>
 
-      <section class="breadcrumbs crimson-400-20-italic">
-        <nav aria-label="breadcrumb" class="breadcrumb">
-          <ul class="dots-none">
-            <li><a href="index.html">Home</a></li>
-
-            <li>
-              <span aria-current="page" style="opacity: 0.5; color: #1e0606"
-                >Contact Us</span
-              >
-            </li>
-          </ul>
-        </nav>
-      </section>
+      @@include('breadcrumbs/index.html', { "page-name":"Contact Us",
+      "text":"Contact Us" })
 
       <section class="contact">
         <div class="contact-form opensans-400-14">
