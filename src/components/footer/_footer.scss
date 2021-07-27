@@ -1,161 +1,118 @@
-footer {
-  background-color: #434343;
-  width: 1400px;
-  max-height: 555px;
-  padding: 100px 110px 100px 110px;
-}
-
-.box-footer {
+.footer {
+  padding: 110px 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0 20px;
-  max-width: 1180px;
-}
-
-.item-footer {
-  width: 380px;
-}
-
-hr {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-
-  width: 100%;
-  height: 1px;
-
-  background-color: #666666;
-  border-color: #5d5d5d;
-  border: 1px;
-  
-}
-
-.hr-short {
-  margin-top: 23px;
-  margin-bottom: 25px;
-}
-
-.hr-long {
-  margin-top: 25px;
-  margin-bottom: 23px;
-}
-
-
-.box-social {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 0 10px;
-
-  &:last-child {
-    margin-top: 25px;
-  }
-}
-
-// .item-social {}
-
-
-.item-footer input {
-  max-height: 40px;
-  width: 300px;
-  background-color: #666666;
-  border: none;
-
-  &::placeholder {
-    color: #ebebeb;
-    border: none;
-    border-color: #1e0606;
-  }
-}
-
-
-
-.box-rating {
-  display: flex;
-  gap: 0 2.88px;
-  align-items: baseline;
-}
-
-.item-raiting-star {
-  content: url(../../static/images/svg/star.svg);
-  max-width: 17.12px;
-  max-height: 16.28px;
-}
-
-.item-raiting-text {
-  margin-right: 22.12px;
-}
-
-footer article {
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #aaaaaa;
-}
-
-footer .url:any-link {
-  color: #ffffff;
-  text-transform: capitalize;
-}
-
-footer .url:hover {
-  opacity: 0.53;
-}
-
-footer .url:active {
-  opacity: 0.24;
-}
-
-.developer-link:hover {
-  text-decoration: underline;
-  color: #ffffff;
-}
-
-.box-links-rows {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
+  gap: 0px 20px;
+  background-color: $dark-gray;
 
-.item-links {
-  margin: 15px auto 15px 0px;
-  max-width: 380px;
-}
+  @extend .sans-16;
 
-.box-email form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap;
-}
+  & hr {
+    width: 100%;
+    height: 1px;
+    background-color: $deep-smoke;
 
-.item-email {
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ebebeb;
-  padding: 9px 15px 9px 15px;
-  outline: none;
+    border-width: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 
-  &:focus {
-    border: 1px solid rgba(255, 253, 253, 1);
+    &:nth-child(4) {
+      margin-block-end: 23px;
+    }
+    
+  }
+
+  &__block {
+    min-width: 380px;
+
+    & article {
+      color: $dark-smoke;
+      margin-block-end: 23px;
+    }
+
+    & ul {
+      margin: 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    & a {
+      color: $white;
+    }
+
+    & form {
+      margin: 25px 0;
+      --width: 100%;
+      height: 40px;
+
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+
+
+      & input {
+        width: 100%;
+        height: 40px;
+        border-width: 0px;
+        border: 1px;
+        border-color: #fffdfd;
+        padding: 9px 10px 9px 15px;
+
+        @extend .sans-16;
+        color: $white;
+
+        background-color: $deep-smoke;
+
+        &::placeholder {
+          @extend .sans-16;
+          color: $smoke;
+        }
+      }
+    }
   }
 }
 
+// footer {
+//   @include phones{ background-color: red;}
+// }
 
-footer input {
-  text-indent: 10px;
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 25px;
+
+  &__label {
+    color: $white;
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.88px;
+
+    & .star {
+      content: url(../../static/images/svg/star.svg);
+    }
+  }
 }
 
-footer section ul li {
-  margin-block-start: 15px;
+.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+
+}
+
+.dev-link {
+
+  & a {
+    color: $dev-link-footer;
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
 }

@@ -1,23 +1,17 @@
 .button {
   display: inline-block;
   max-width: fit-content;
-  background-color: black;
+  background-color:$black;
   align-items: center;
   padding: 9px 22px 9px 22px;
-  color: white;
+  color: $white;
   text-transform: uppercase;
   border: none;
-  
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
+
+  @extend .button-style;
 
   &:hover {
-    background-color: #c29974;
+    background-color: $sun-tree;
   }
 
   &:active {
