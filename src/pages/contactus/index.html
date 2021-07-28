@@ -6,78 +6,28 @@
     @@include('header/index.html')
 
     <main>
-
       @@include('breadcrumbs/index.html', { "page-name":"Contact Us",
       "text":"Contact Us" })
 
-      <section class="contact">
-        <div class="contact-form opensans-400-14">
-          <form class="contact-box not-transform" action="" method="POST">
-            <fieldset class="contact-item">
-              <div class="label-wrapper">
-                <label for="field-name" class="form-label">Name</label>
-                <input id="field-name" class="form-input" type="text" />
-              </div>
-            </fieldset>
-
-            <fieldset class="contact-item">
-              <div class="label-wrapper">
-                <label for="field-phone" class="form-label">Phone</label>
-                <input id="field-phone" type="tel" />
-              </div>
-            </fieldset>
-
-            <fieldset class="contact-item">
-              <div class="label-wrapper">
-                <label for="field-email" class="form-label">Email</label>
-                <input id="field-email" type="email" />
-              </div>
-            </fieldset>
-
-            <fieldset class="contact-item">
-              <div class="label-wrapper">
-                <label class="form-label">Message</label>
-                <textarea></textarea>
-              </div>
-            </fieldset>
-
-            <div class="contact-item">
-              <div class="consent">
-                <input class="consent-checkbox" type="checkbox" />
-                <label class="btn btn-warning"
-                  >By clicking on the button, you consent to the processing of
-                  your personal data</label
-                >
-              </div>
-            </div>
-
-            <div class="label-wrapper">
-              @@include('button/index.html', { "text":"Submit" })
-            </div>
-          </form>
-        </div>
-
-        <div class="text-box">
-          <p class="opensans-700-16-normal">
+      <div class="content">
+        <div>@@include('form/index.html')</div>
+        <div class="content__text">
+          <p class="content__text__chapter">
             Our support team are on-hand to assist with any issues you are
             experiencing.
           </p>
 
-          <p class="opensans-700-16-normal">
+          <p class="content__text__chapter">
             Please use the form to contact us with your needs. Send us a message
             and we'll respond as soon as possible.
           </p>
 
-          <p class="Montserrat-600-26-gold">
-            An expert is waiting to help you!
-          </p>
+          <p class="content__text__chapter">An expert is waiting to help you!</p>
         </div>
-      </section>
+      </div>
     </main>
 
     @@include('footer/index.html') @@include('popup/index.html')
-
-<div class="kek"></div>
 
   </body>
 </html>

@@ -1,13 +1,6 @@
- // mixins популярных брекпоинтов
 @mixin desktop {
     @media screen and (max-width: 1200px) {
          @content;
-    }
-}
-
-@mixin laptop {
-    @media screen and (max-width: 992px) {
-        @content;
     }
 }
 
@@ -18,7 +11,7 @@
 }
 
 @mixin phones {
-   @media screen and (max-width: 480px) {
+   @media screen and (max-width: 375px) {
         @content;
    }
 }
@@ -28,3 +21,20 @@
 // footer {
 //   @include phones{ background-color: red;}
 // }
+
+// @mixin laptop {
+//     @media screen and (max-width: 992px) {
+//         @content;
+//     }
+// }
+
+// @mixin phones {
+//     @media screen and (max-width: 480px) {
+//          @content;
+//     }
+//  }
+
+
+// @include desktop { margin-block-end: ;}
+// @include tablets { margin-block-end: ;}
+// @include phones { margin-block-end: ;}

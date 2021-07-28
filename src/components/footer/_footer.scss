@@ -40,6 +40,13 @@
 
     & a {
       color: $white;
+      &:hover {
+        opacity: .5;
+      }
+    }
+
+    & span {
+      color: $white;
     }
 
     & form {
@@ -74,9 +81,7 @@
   }
 }
 
-// footer {
-//   @include phones{ background-color: red;}
-// }
+
 
 .rating {
   display: flex;
@@ -95,6 +100,7 @@
 
     & .star {
       content: url(../../static/images/svg/star.svg);
+     
     }
   }
 }
@@ -109,10 +115,13 @@
 .dev-link {
 
   & a {
+
     color: $dev-link-footer;
+
     &:hover {
       color: $white;
       text-decoration: underline;
+      opacity: 1;
     }
   }
 }

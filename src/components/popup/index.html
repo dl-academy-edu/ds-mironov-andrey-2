@@ -1,39 +1,7 @@
-
 <div class="popup">
-  <form class="popup__form" action="" method="POST">
-    <fieldset class="popup__form__item">
-      <label for="field-name">Name</label>
-      <input id="field-name" class="form-input" type="text" />
-    </fieldset>
-
-    <fieldset class="popup__form__item">
-      <label for="field-phone">Phone</label>
-      <input id="field-phone" type="tel" />
-    </fieldset>
-
-    <fieldset class="popup__form__item">
-      <label for="field-email">Email</label>
-      <input id="field-email" type="email" />
-    </fieldset>
-
-    <fieldset class="popup__form__item">
-      <label>Message</label>
-      <textarea></textarea>
-    </fieldset>
-
-    <fieldset class="popup__form__item">
-      <input type="checkbox"/>
-      <label>
-        By clicking on the button, you consent to the processing of your
-        personal data
-      </label>
-    </fieldset>
-
-    <div class="popup__form__item">
-      @@include('button/index.html', { "text":"Submit" })
-    </div>
-
-    <div class="popup-close-js popup__form__close"></div>
-  </form>
+  <div class="popup__box">
+    @@include('form/index.html')
+    <div class="popup-close-js popup__btn-close"></div>
+  </div>
 </div>
 <script src="http://localhost:3000/script.js"></script>
