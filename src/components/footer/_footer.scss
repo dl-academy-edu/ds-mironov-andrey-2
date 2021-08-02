@@ -1,4 +1,7 @@
 .footer {
+  
+
+
   padding: 110px 100px;
   display: flex;
   flex-wrap: wrap;
@@ -6,7 +9,7 @@
   gap: 0px 20px;
   background-color: $dark-gray;
 
-  @extend .sans-16;
+  @extend .sans-16-22-400;
 
   & hr {
     width: 100%;
@@ -67,13 +70,13 @@
         border-color: #fffdfd;
         padding: 9px 10px 9px 15px;
 
-        @extend .sans-16;
+        @extend .sans-16-22-400;
         color: $white;
 
         background-color: $deep-smoke;
 
         &::placeholder {
-          @extend .sans-16;
+          @extend .sans-16-22-400;
           color: $smoke;
         }
       }

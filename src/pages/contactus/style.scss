@@ -1,26 +1,38 @@
 @import "../../components/mixins";
 @import "../../components/colors";
 @import "../../components/fonts";
-// fix
 
 .content {
   display: flex;
   gap: 120px;
   margin: 50px 110px 60px 110px;
-
+  
+  @include tablets { margin: auto 45px; flex-direction: column-reverse; gap: 45px; }
+  @include phones { margin: auto 25px; flex-direction: column-reverse; gap: 25px;}
+ 
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; 
+   
+        @include phones { gap: 15px }
+
 
     &__chapter {
-      @extend .sans-14-22;
+      @extend .sans-14-22-400;
       color: $black;
+      @include tablets { text-align: center;}
+        @include phones { text-align: center; }
 
       &:last-child {
-        @extend .montserrat-26-34;
+        @extend .montserrat-26-34-600;
         color: $sun-tree;
         text-transform: uppercase;
+
+        @include tablets { text-align: center;}
+        @include phones { text-align: center; }
+
+
       }
     }
   }

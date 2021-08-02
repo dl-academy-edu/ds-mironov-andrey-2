@@ -5,7 +5,7 @@
   <body>
     @@include('header/index.html')
     <main>
-      <section class="banner">
+      <section class="banner container">
         <div class="banner__counter">
           <p class="banner__counter__number">O1</p>
 
@@ -60,7 +60,7 @@
         </div>
       </section>
 
-      <section class="category">
+      <section class="category container">
         <p class="category__article">CATEGORY PRODUCTS</p>
 
         @@include('items/category.html', { 
@@ -76,7 +76,7 @@
         "name":"HOLIDAY SHOP", })
 
         @@include('items/category.html', { 
-        "href":"#",
+        "href":"/pages/toys",
         "img":"../../static/images/category/3.png, ../../static/images/category/3-2x.png 2x",
         "alt":"none",
         "name":"TOYS", }) 
@@ -100,7 +100,7 @@
         </div>
       </section>
 
-      <section class="service">
+      <section class="service container">
         <div class="service__left">
           <img
             class="service__left__img"
@@ -136,7 +136,7 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section class="partners container">
         @@include('items/partners.html', { "class":"partners__item-1",
         "href":"https://mail.ru/",
         "img":"../../static/images/partners/mail_ru.png", "alt":"mail.ru", })
@@ -151,7 +151,7 @@
         "img":"../../static/images/partners/owox.png", "alt":"owox.ru", })
       </section>
 
-      <section class="contacts">
+      <section class="contacts container">
         <div class="contacts__item">
           <p class="contacts__item__article">Design Life Kids</p>
 

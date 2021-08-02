@@ -21,14 +21,25 @@ p {
 }
 
 body {
-  max-width: 1400px;
-  margin: auto;
+  margin: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+}
+
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-block-end: 90px;
+
+  @include desktop { max-width: 1180px;}
+  @include tablets { max-width: 648px;}
+  @include phones { max-width: 375px;}
 }
 
 

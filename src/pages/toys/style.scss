@@ -1,9 +1,14 @@
+@import "../../components/mixins";
+@import "../../components/colors";
+@import "../../components/fonts";
+
 .store {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px 20px;
   flex-wrap: wrap;
-  margin: 60px 110px 50px 110px;
+  min-width: 100%;
+
 }
 
 .item {
@@ -44,35 +49,25 @@
     }
 
     &__text {
-      font-family: Montserrat;
-      font-size: 26px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 29px;
-      letter-spacing: 0em;
+      @extend .montserrat-26-29-700;
       text-align: center;
-      color: #1e0606;
+      color:$black;
     }
   }
 
   &__name {
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
+    @extend .sans-14-19-400;
+    
     text-align: center;
+    color: $black;
     margin-block-end: 15px;
   }
 
   &__cost {
-    font-size: 16px;
-    font-style: normal;
+    @extend .sans-16-22-400;
+
     font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
     text-align: center;
-    font-family: Open Sans;
+    color: $black;
   }
 }

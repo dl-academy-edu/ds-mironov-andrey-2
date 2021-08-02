@@ -1,43 +1,38 @@
 .breadcrumbs {
-
-
-
-  margin: 0 auto 50px 110px;
-  @include desktop { margin: 60px auto 50px 110px;}
-  @include tablets { margin: 70px auto 30px 60px;}
-  @include phones { margin: 46px auto 20px 20px;}
-
   & article {
-    // display: inline-block;
-    @extend .montserrat-40;
+    @extend .montserrat-40-49-700;
     color: $black;
     text-transform: uppercase;
 
-
-
     margin-block-end: 15px;
-    @include desktop { margin-block-end: 15px; }
-    @include tablets { margin-block-end: 10px; }
-    @include phones { margin-block-end: 10px; }
-
+  
+    @include tablets {
+      margin-block-end: 10px;
+    }
+    @include phones {
+      margin-block-end: 10px;
+    }
   }
 
   & ul {
     display: flex;
     padding-left: 0px;
-    // margin-block-end: 0px;???
-    
-    gap: 20px;
-    @include phones { gap: 14px; }
 
+    gap: 20px;
     
+    @include phones {
+      gap: 14px;
+    }
+
     & li::before {
       content: url(../../static/images/svg/Vector-breadcrumb.svg);
       width: 8px;
       margin-right: 20px;
-      //fix
-      @include phones { width: 6px; margin-right: 14px; }
-      
+    
+      @include phones {
+        width: 6px;
+        margin-right: 14px;
+      }
     }
 
     & li:first-child::before {
@@ -46,8 +41,8 @@
     }
 
     & li span {
-      opacity: .5; 
-      color: #1E0606;
+      opacity: 0.5;
+      color: $black;
     }
   }
 

@@ -9,27 +9,56 @@
 
       @@include('selector/index.html')
       
+    <section class="store container">
 
-    <section class="store">
+      @@include('items/item.html', {
+        "href":"#",
+        "img":"../../static/images/store/1.jpg",
+        "alt":"none",
+        "name":"SHARKY BEAN BAG CHAIR COVER",
+        "cost":"$60.00 USD",
+       })
 
-    <div class="item">
-      
-      <div class="item__photo">
-        <a href="#">
-        <img class="item__photo__image" src="../../static/images/store/photo-item-1.png" alt="photo-item">
-        <div class="item__photo__middle">
-          <p class="item__photo__text">LEARN MORE</p>
-        </div>
-      </a>
-      </div>
-     
-      <p class="item__name">SHARKY BEAN BAG CHAIR COVER</p>
-      <p class="item__cost">$60.00 USD</p>
-    </div>
+       
+      @@include('items/item.html', {
+        "href":"#",
+        "img":"../../static/images/store/2.jpg",
+        "alt":"none",
+        "name":"BRASS DECO FRAMES",
+        "cost":"$66.00 USD",
+       })
 
+       @@include('items/item.html', {
+        "href":"#",
+        "img":"../../static/images/store/3.jpg",
+        "alt":"none",
+        "name":"CIBO FULL APRON",
+        "cost":"$60.00 USD",
+       })
 
-    
+       @@include('items/item.html', {
+        "href":"#",
+        "img":"../../static/images/store/4.jpg",
+        "alt":"none",
+        "name":"GATCHA GATCHA GUMBALL MACHINE",
+        "cost":"$56.00 USD",
+       })
 
+       @@include('items/item.html', {
+        "href":"#",
+        "img":"../../static/images/store/5.jpg",
+        "alt":"none",
+        "name":"CHRISTMAS ADVENT SCENTED CANDLE",
+        "cost":"$29.00 USD",
+       })
+
+       @@include('items/item.html', {
+        "href":"#",
+        "img":"../../static/images/store/6.jpg",
+        "alt":"none",
+        "name":"TANGLE SPINNING TEA LIGHT",
+        "cost":"$56.00 USD",
+       })
 
 
     </section>

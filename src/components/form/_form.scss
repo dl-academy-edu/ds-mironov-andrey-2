@@ -1,5 +1,6 @@
 .form {
   padding: 42px 40px;
+  width: 680px;
 
   @include tablets {
     padding: 42px 56px;
@@ -11,7 +12,8 @@
     width: 335px;
   }
 
-  width: 680px;
+  width: fit-content;
+ 
 
   background-color: $light-sky-blue;
 
@@ -31,12 +33,16 @@
 
     &:nth-child(2),
     &:nth-child(3) {
-      max-width: 290px;
-      display: inline-block;
-
-      @include tablets {
-        min-width: 100%;
+      width: 290px;
+      
+       @include tablets {
+        width: 258px;
       }
+      
+      @include phones {
+        width: 100%;
+      }
+
     }
 
     &:nth-child(5) {
@@ -53,7 +59,7 @@
       display: block;
       margin-block-end: 6px;
 
-      @extend .roboto-14;
+      @extend .roboto-14-16-400;
       color: $black;
 
       gap: 15px;
@@ -67,7 +73,7 @@
       padding: 14px 20px 12px 20px;
       outline: none;
 
-      @extend .sans-18;
+      @extend .sans-18-25-400;
       color: $black;
 
       &:focus {
@@ -89,7 +95,7 @@
       padding: 14px 20px 12px 20px;
       outline: none;
 
-      @extend .sans-18;
+      @extend .sans-18-25-400;
       color: $black;
 
       &:focus {

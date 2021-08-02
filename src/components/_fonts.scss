@@ -1,95 +1,134 @@
+//sans
 
-.roboto-14 {
-  font-family: Roboto;
-  font-size: 14px;
-  
-  font-weight: 400;
-  line-height: 16px;
-   
-}
-
-.sans-18 {
+.sans-12-16-700 {
   font-family: Open Sans;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
 }
 
-.sans-16 {
+.sans-14-19-400 {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+
+  @include tablets {
+    line-height: 22px;
+  }
+  @include desktop {
+    line-height: 22px;
+  }
+}
+
+.sans-14-22-400 {
   font-family: Open Sans;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
-.sans-14 {
-font-family: Open Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-}
-
-.sans-14-22 {
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-}
-
-
-
-.button-style {
+.sans-16-22-400 {
   font-family: Open Sans;
   font-size: 16px;
-  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.sans-16-22-700 {
+  font-family: Open Sans;
+  font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
 }
 
-
-.crimson-16 {
-font-family: Crimson Text;
-font-size: 20px;
-font-style: italic;
-font-weight: 400;
-line-height: 25px;
-
-@include phones { font-size: 16px; line-height: 20px; }
+.sans-18-25-400 {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
 }
 
+//crimson
 
-.montserrat-40 {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 49px;
-
-@include tablets { font-size: 36px; line-height: 44px; }
-@include phones { font-size: 24px; line-height: 29px; }
-
+.crimson-20-25-400 {
+  font-family: Crimson Text;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 25px;
 }
 
-.montserrat-26-34 {
+.crimson-26-32-400 {
+  font-family: Crimson Text;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+//montserrat
+
+.montserrat-40-49-700 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+
+  @include tablets {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  @include phones {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.montserrat-26-29-700 {
   font-family: Montserrat;
   font-size: 26px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 34px;
-  letter-spacing: 0px;
-  text-align: left;
-  
+  font-weight: 700;
+  line-height: 29px;
 }
 
+.montserrat-26-32-700 {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+}
 
+.montserrat-26-34-600 {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+
+  @include phones {
+    font-size: 24px;
+  }
+}
+
+.montserrat-38-46-700 {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.montserrat-60-73-300 {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 73px;
+}
+
+//roboto
+
+.roboto-14-16-400 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
