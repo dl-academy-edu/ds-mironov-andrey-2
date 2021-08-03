@@ -1,15 +1,15 @@
 .form {
   padding: 42px 40px;
-  width: 680px;
+  min-width: 680px;
 
   @include tablets {
     padding: 42px 56px;
-    width: 648px;
+    min-width: 648px;
   }
 
   @include phones {
     padding: 25px 25px;
-    width: 335px;
+    min-width: 335px;
   }
 
   width: fit-content;
@@ -33,12 +33,8 @@
 
     &:nth-child(2),
     &:nth-child(3) {
-      width: 290px;
-      
-       @include tablets {
-        width: 258px;
-      }
-      
+     width: calc(100% / 2 - 10px);
+           
       @include phones {
         width: 100%;
       }
