@@ -19,7 +19,7 @@
 
 
     &__chapter {
-      @extend .sans-14-22-400;
+      @extend .sans-16-22-400;
       color: $black;
       @include tablets { text-align: center;}
         @include phones { text-align: center; }

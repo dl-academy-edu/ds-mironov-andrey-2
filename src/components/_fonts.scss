@@ -12,20 +12,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
-
-  @include tablets {
-    line-height: 22px;
-  }
-  @include desktop {
-    line-height: 22px;
-  }
-}
-
-.sans-14-22-400 {
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
 }
 
 .sans-16-22-400 {
@@ -69,20 +55,11 @@
 
 //montserrat
 
-.montserrat-40-49-700 {
+.montserrat-16-20-700 {
   font-family: Montserrat;
+  font-size: 16px;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
-
-  @include tablets {
-    font-size: 36px;
-    line-height: 44px;
-  }
-  @include phones {
-    font-size: 24px;
-    line-height: 29px;
-  }
+  line-height: 20px;
 }
 
 .montserrat-26-29-700 {
@@ -104,10 +81,6 @@
   font-size: 26px;
   font-weight: 600;
   line-height: 34px;
-
-  @include phones {
-    font-size: 24px;
-  }
 }
 
 .montserrat-38-46-700 {
@@ -115,6 +88,13 @@
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
+}
+
+.montserrat-40-49-700 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
 }
 
 .montserrat-60-73-300 {

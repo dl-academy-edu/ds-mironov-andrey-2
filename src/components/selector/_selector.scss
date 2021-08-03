@@ -1,8 +1,7 @@
 .selector {
-  margin-top: 50px;
   margin-bottom: 60px;
-  max-width: 1400px;
-  background-color: #e5eaf8;
+  width: 100%;
+  background-color: $light-sky-blue;
 }
 
 .selector-form {
@@ -10,25 +9,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
 
-.selector-form article {
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
+  & article {
+    @extend .sans-16-22-700;
+    color: $black;
 
-  margin-block-end: 15px;
-  color: #1e0606;
+    margin-block-end: 15px;
+  }
+
+  & label {
+    @extend .sans-16-22-400;
+    color: $black;
+   }
+
 }
 
 .cost-selector label {
   position: relative;
   top: 16px;
-  
 }
 
 .color-massive {
@@ -36,18 +34,6 @@
   flex-direction: column;
   gap: 15px;
   justify-content: flex-start;
-}
-
-.selector label {
-  // .opensans-400-16
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #1e0606;
 }
 
 .delivery-massive {
@@ -62,33 +48,20 @@
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 0px;
-
 }
 .amount-button {
   min-width: 80px;
   max-height: 35px;
 
-  background-color: #ffffff;
-  align-items: center;
+  @extend .sans-16-22-400;
+  background-color: $white;
   padding: 7px 19px 7px 19px;
-  color: #1e0606;
+  color: $black;
 
   text-transform: uppercase;
   border: none;
 
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-
-  &:hover {
-    background-color: #f3d0db;
-  }
-
-  &:active {
+  &:hover, &:active, &:checked {
     background-color: #f3d0db;
   }
 }
