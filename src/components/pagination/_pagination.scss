@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__numbers {
+    @extend .montserrat-16-20-700;
+    color: $black;
+    cursor: pointer;
+    display: flex;
+
+    gap: 64px;
+
+    & p:hover {
+      color: $sun-tree;
+    }
+  }
+
+  & .vector {
+    width: 13px;
+    opacity: 0.12;
+  }
+}

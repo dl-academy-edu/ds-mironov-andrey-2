@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('items/head.html', { "title":"DLK - Contact Us" })
+
+  <body>
+    @@include('header/index.html')
+
+    <main>
+      @@include('breadcrumbs/index.html', { "page-name":"Contact Us",
+      "text":"Contact Us" })
+
+      <div class="content container">
+        <div>@@include('form/index.html')</div>
+        <div class="content__text">
+          <p class="content__text__chapter">
+            Our support team are on-hand to assist with any issues you are
+            experiencing.
+          </p>
+
+          <p class="content__text__chapter">
+            Please use the form to contact us with your needs. Send us a message
+            and we'll respond as soon as possible.
+          </p>
+
+          <p class="content__text__chapter">An expert is waiting to help you!</p>
+        </div>
+      </div>
+    </main>
+
+    @@include('footer/index.html') @@include('popup/index.html')
+
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('items/head.html', { "title":"DLK - Catalog" })
+  <body>
+    @@include('header/index.html')
+    <main>
+      @@include('breadcrumbs/index.html', { "page-name":"Category Products",
+      "text":"Catalog" })
+
+      <section class="category container">
+      
+        @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/1.png",
+          "alt":"none",
+          "name":"APPAREL KIDS",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/2.png",
+          "alt":"none",
+          "name":"HOLIDAY SHOP",
+         })
+
+         @@include('items/category.html', {
+          "href":"/pages/toys",
+          "img":"../../static/images/category/3.png",
+          "alt":"none",
+          "name":"TOYS",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/4.png",
+          "alt":"none",
+          "name":"ACCESSORIES",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/5.png",
+          "alt":"none",
+          "name":"SALE",
+         })
+
+         @@include('items/category.html', {
+          "href":"#",
+          "img":"../../static/images/category/6.png",
+          "alt":"none",
+          "name":"APPAREL ADULTS",
+         })
+
+      </section>
+
+      <section class="description container">
+        <article class="description__article">Product Description</article>
+        <div class="description__text">
+          <p>
+            Interactive doll Zapf Creation Baby Born Sister can drink from a
+            bottle and almost really cry. You can even bathe her, just like a
+            little sister.
+          </p>
+        </div>
+        <div class="description__text">
+          <p>
+            A toy with a height of 43 cm bends its knees, the head rotates, it
+            can stand upright. Such a doll will be an excellent choice for a
+            gift for a girl from 4 years old.
+          </p>
+        </div>
+        <div class="description__text">
+          <p>
+            The set includes a miniature set of fashionable clothes, a
+            hairbrush, a bottle for water, a pair of hairpins and elastic bands
+            for hair, as well as two bracelets: one for the doll, the other for
+            her young mistress.
+          </p>
+        </div>
+      </section>
+    </main>
+    @@include('footer/index.html') @@include('popup/index.html')
+  </body>
+</html>

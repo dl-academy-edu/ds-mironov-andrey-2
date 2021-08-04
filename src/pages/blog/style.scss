@@ -1,0 +1,51 @@
+@import "../../components/mixins";
+@import "../../components/colors";
+@import "../../components/fonts";
+
+.blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px 20px;
+   
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 380px;
+    
+    
+    // &__href {}
+
+    &__img {
+      width: 100%;
+      margin-block-end: 20px;
+    }
+
+    &__date {
+      @extend .sans-16-22-400;
+      color: #818181;
+
+      width: 100%;
+      margin-block-end: 10px;
+      
+    }
+
+    &__article {
+      @extend .monsterrat-24-31-700;
+      color: $black;
+
+      width: 100%;
+      margin-block-end: 15px;
+    }
+
+    &__text {
+      @extend .sans-18-25-400;
+      color: $black;
+      
+      width: 100%;
+      margin-block-end: 20px;
+    }
+  }
+}

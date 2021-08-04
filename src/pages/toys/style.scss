@@ -1,0 +1,73 @@
+@import "../../components/mixins";
+@import "../../components/colors";
+@import "../../components/fonts";
+
+.store {
+  display: flex;
+  justify-content: center;
+  gap: 20px 20px;
+  flex-wrap: wrap;
+  min-width: 100%;
+
+}
+
+.item {
+  &__photo {
+    width: 380px;
+    height: auto;
+    margin-block-end: 30px;
+    position: relative;
+
+    &:hover .item__photo__middle {
+      opacity: 0.9;
+    }
+    
+    &:focus-within .item__photo__middle {
+      opacity: 0.67;
+    }
+    
+    &__image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+    }
+
+    &__middle {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 207px;
+      height: 207px;
+      background-color: #e5eaf8;
+      padding: 82px 12px 96px 11px;
+    }
+
+    &__text {
+      @extend .montserrat-26-29-700;
+      text-align: center;
+      color:$black;
+    }
+  }
+
+  &__name {
+    @extend .sans-14-19-400;
+    
+    text-align: center;
+    color: $black;
+    margin-block-end: 15px;
+  }
+
+  &__cost {
+    @extend .sans-16-22-400;
+
+    font-weight: 700;
+    text-align: center;
+    color: $black;
+  }
+}

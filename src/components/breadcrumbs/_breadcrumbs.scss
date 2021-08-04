@@ -1,0 +1,55 @@
+.breadcrumbs {
+  & article {
+    @extend .montserrat-40-49-700;
+    color: $black;
+    text-transform: uppercase;
+
+    margin-block-end: 15px;
+  
+    @include tablets {
+      margin-block-end: 10px;
+    }
+    @include phones {
+      margin-block-end: 10px;
+    }
+  }
+
+  & ul {
+    display: flex;
+    padding-left: 0px;
+
+    gap: 20px;
+    
+    @include phones {
+      gap: 14px;
+    }
+
+    & li::before {
+      content: url(../../static/images/svg/Vector-breadcrumb.svg);
+      width: 8px;
+      margin-right: 20px;
+    
+      @include phones {
+        width: 6px;
+        margin-right: 14px;
+      }
+    }
+
+    & li:first-child::before {
+      content: "";
+      margin-right: 0px;
+    }
+
+    & li span {
+      opacity: 0.5;
+      color: $black;
+    }
+  }
+
+  & a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $black;
+  }
+}

@@ -1,0 +1,411 @@
+.animation {
+    display: block;
+    position: relative;
+    width: -webkit-fill-available;
+    height: auto;
+    margin-block-end: 40px;
+    overflow: hidden;
+}
+
+// Солнце и движение облаков
+.sky {
+    width: 100%;
+    height: 100px}
+
+.sun {
+    content: url('../../static/images/animation/sky/sun.svg');
+    position: absolute;
+    right: 25%;
+}
+
+.cloud {
+    &-0 {
+        content: url('../../static/images/animation/sky/cloud-0.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    &-1 {
+        content: url('../../static/images/animation/sky/cloud-1.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 20%;
+    }
+
+    &-3 {
+        content: url('../../static/images/animation/sky/cloud-3.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 45%;
+    }
+
+    &-4 {
+        content: url('../../static/images/animation/sky/cloud-4.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 65%;
+    }
+
+    &-5 {
+        content: url('../../static/images/animation/sky/cloud-5.svg'); 
+        position: absolute;
+        top: 5%;
+        left: 85%;
+    }
+}
+
+.cloud-mover {
+    animation: cloud-mover 20s ease-in-out forwards infinite;
+}
+    
+@keyframes cloud-mover {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
+}
+
+// Статичный фон (Город)
+.background {
+    content: url('../../static/images/animation/background.svg');
+    width: 100%;
+}
+
+// Фонари
+.lantern {
+ 
+    &__left {
+        content: url('../../static/images/animation/lantern-back.svg');
+        position: absolute;
+        top: 14%;
+        left: 35%;
+        z-index: 60;
+        fill:red;
+    }
+    
+    &__right {
+        content: url('../../static/images/animation/lantern-back.svg');
+        position: absolute;
+        top: 14%;
+        left: 80.5%;
+        z-index: 60;
+    }
+
+    &__front {
+        content: url('../../static/images/animation/lantern-front.svg');
+        position: absolute;
+        top: 11%;
+        left: 71%;
+        z-index: 100;
+    }
+}
+
+// Машины 2 плана
+.car1 {
+    display: table-cell;
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 31%;
+    left: 5%;
+       
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+    content: url('../../static/images/animation/car1/Car1.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 13.5%;
+    bottom: -1%;
+    content: url('../../static/images/animation/car1/wheel1.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 9.25%;
+    bottom: -1%;
+    content: url('../../static/images/animation/car1/wheel1.svg');
+    z-index: 50;
+    }
+}
+
+.car2 {
+    display: table-cell;
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 31%;
+    left: 25%;
+   
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+    content: url('../../static/images/animation/car2/Car2.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 8.5%;
+    bottom: 0;
+    content: url('../../static/images/animation/car2/wheel2.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 8.5%;
+    bottom: 0;
+    content: url('../../static/images/animation/car2/wheel2.svg');
+    z-index: 50;
+    }
+}
+
+.car3 {
+    display: table-cell;
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 31%;
+    left: 55%;
+   
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+    content: url('../../static/images/animation/car3/Car3.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 18.75%;
+    bottom: 8.25%;
+    content: url('../../static/images/animation/car3/wheel3.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 15.25%;
+    bottom: 8.25%;
+    content: url('../../static/images/animation/car3/wheel3.svg');
+    z-index: 50;
+    }  
+}
+
+.car4 {
+    display: table-cell;
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 31%;
+    left: 75%;
+   
+    &__body {
+    display: block;
+    width: auto;
+    height: auto;
+    content: url('../../static/images/animation/car4/Car4.svg');
+    z-index: 45;
+    }
+
+    &__l-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 13.25%;
+    bottom: 0;
+    content: url('../../static/images/animation/car4/wheel4.svg');
+    z-index: 50;
+    }
+
+    &__r-wheel {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 9.25%;
+    bottom: 0;
+    content: url('../../static/images/animation/car4/wheel4.svg');
+    z-index: 50;
+    }
+}
+
+// Кручение колёс машин 2 плана
+.wheel-clockwise {
+    animation: wheel-clockwise 2s linear 0s normal none infinite running;
+}
+
+@keyframes wheel-clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+// Движение машин 2 плана
+.speed1 {
+    animation: speed1 30s ease-in-out forwards infinite;
+}
+
+@keyframes speed1 {
+    0% { transform: translateX(-350px); }
+    100% { transform: translateX(1600px); }
+}
+
+.speed2 {
+    animation: speed2 60s ease-in-out forwards infinite;
+}
+
+@keyframes speed2 {
+    0% { transform: translateX(-1000px); }
+    100% { transform: translateX(1600px); }
+}
+
+.speed3 {
+    animation: speed3 60s ease-in-out forwards infinite;
+}
+
+@keyframes speed3 {
+    0% { transform: translateX(-1200px); }
+    100% { transform: translateX(1600px); }
+}
+
+.speed4 {
+    animation: speed4 60s ease-in-out forwards infinite;
+}
+
+@keyframes speed4 {
+    0% { transform: translateX(-1600px); }
+    100% { transform: translateX(1600px); }
+}
+
+// Такси
+.taxi {
+    display: table-cell;
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 13%;
+    left: 25%;
+    z-index: 80;
+    
+
+    &__body {
+        display: block;
+        content: url('../../static/images/animation/taxi/taxi-body.svg');
+        width: auto;
+        height: auto;
+               
+    }
+
+    &__glass {
+        display: block;
+        content: url('../../static/images/animation/taxi/glass.svg');
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 35.75%;
+        bottom: 59.5%;
+        z-index: -1;
+    }
+    &__l-wheel {
+        display: block;
+        content: url('../../static/images/animation/taxi/taxi-wheel.svg');
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 15%;
+        bottom: 7%;
+     
+    }
+
+    &__r-wheel {
+        display: block;
+        content: url('../../static/images/animation/taxi/taxi-wheel.svg');
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 18.75%;
+        bottom: 7%;
+       
+    }
+    
+}
+
+// Водитель
+.taxi__driver {
+    display: block;
+    content: url('../../static/images/animation/taxi/driver.png');
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 37.5%;
+    bottom: 52%;
+    z-index: -1;
+}
+
+// Кручение Такси
+.wheel-counterclock {
+    animation: wheel-counterclock 2s linear 0s normal none infinite running;
+}
+
+@keyframes wheel-counterclock {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
+    }
+}
+
+// Анимация окна
+.glass-open {
+    animation: glass-open 10s ease-in-out forwards infinite;
+}
+
+@keyframes glass-open {
+    0% {
+      transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+// user-select: none;

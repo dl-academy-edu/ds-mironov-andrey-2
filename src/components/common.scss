@@ -1,0 +1,55 @@
+@import "./mixins";
+@import "./colors";
+@import "./fonts";
+
+.dots-none,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-block-end: 90px;
+
+  @include desktop { max-width: 1180px;}
+  @include tablets { max-width: 648px;}
+  @include phones { max-width: 375px;}
+}
+
+
+
+// Подключение компонентов
+@import "./header/header";
+@import "./footer/footer";
+@import "./popup/popup";
+@import "./button/button";
+@import "./breadcrumbs/breadcrumbs";
+@import "./selector/selector";
+@import "./pagination/pagination";
+@import "./form/form";

@@ -1,0 +1,67 @@
+.header {
+  margin-block-start: 50px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+ 
+  &__logo {
+    min-width: 100px;
+    height: 52px;
+    margin-inline-end: 60px;
+
+    &:hover {
+      opacity: 0.53;
+    }
+
+    &:active {
+      opacity: 0.24;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+
+    @extend .sans-14-19-400;
+    color: $black;
+
+    &__item {
+      &:hover {
+        opacity: 0.53;
+      }
+
+      &:active {
+        opacity: 0.24;
+      }
+
+      &-loupe {
+        margin-left: auto;
+        min-width: 24px;
+
+        &:hover {
+          opacity: 0.53;
+        }
+
+        &:active {
+          opacity: 0.24;
+        }
+      }
+
+      &:nth-last-child(1) {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+header a:link,
+header a:visited,
+header a:hover,
+header a:active {
+  color: #1e0606;
+}
+

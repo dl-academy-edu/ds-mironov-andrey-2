@@ -1,0 +1,71 @@
+.selector {
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: $light-sky-blue;
+}
+
+.selector-form {
+  padding: 42px 195px 42px 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & article {
+    @extend .sans-16-22-700;
+    color: $black;
+
+    margin-block-end: 15px;
+  }
+
+  & label {
+    @extend .sans-16-22-400;
+    color: $black;
+   }
+
+}
+
+.cost-selector label {
+  position: relative;
+  top: 16px;
+}
+
+.color-massive {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.delivery-massive {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.amount-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0px;
+}
+.amount-button {
+  min-width: 80px;
+  max-height: 35px;
+
+  @extend .sans-16-22-400;
+  background-color: $white;
+  padding: 7px 19px 7px 19px;
+  color: $black;
+
+  text-transform: uppercase;
+  border: none;
+
+  &:hover, &:active, &:checked {
+    background-color: #f3d0db;
+  }
+}
+
+.apply-button {
+  margin-top: 37px;
+}

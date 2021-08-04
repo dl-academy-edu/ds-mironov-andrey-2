@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  max-width: fit-content;
+  
+  align-items: center;
+
+  padding: 9px 22px;
+
+  @include phones { padding: 8px 20px; }
+
+  cursor: pointer;
+  background-color: $black;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+
+  @extend .sans-16-22-700;
+  
+  @include phones {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &:hover {
+    background-color: $sun-tree;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
+  
+  &:disabled {
+    background-color: $light-gray;
+  }
+}

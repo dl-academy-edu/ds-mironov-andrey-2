@@ -1,0 +1,41 @@
+.popup {
+  display: none;
+  background: $popup-background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-open {
+    display: block;
+  }
+  &-close {
+    display: none;
+  }
+
+  &__btn-close {
+    display: block;
+    content: url(../../static/images/svg/popup-close.svg);
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    right: -25px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+
+    @include tablets {
+      top: -25px;
+      right: 0px;
+    }
+  }
+}
